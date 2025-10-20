@@ -65,7 +65,6 @@ export default function Footer() {
                             <h4 className="mt-7 text-xs font-semibold text-gray-900 uppercase">Industries</h4>
 
                             <div className="mt-3 grid space-y-3 text-sm">
-                                <p><a className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-hidden focus:text-gray-800" href="#">Financial Services</a></p>
                                 <p><a className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-hidden focus:text-gray-800" href="#">Education</a></p>
                             </div>
                         </div>
