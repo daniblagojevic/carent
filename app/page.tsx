@@ -29,8 +29,7 @@ export default function Home() {
             <section>
                 <div className="pb-2 md:pb-10">
                     <div className="container">
-                        fdsfdsfds
-                        <div>fsdfsdfdsfdsf</div>
+                        <div>fsdfsdfdsfdsf 234</div>
                     </div>
                 </div>
             </section>
