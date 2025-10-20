@@ -1,0 +1,146 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1758287788890,
+      "tag": "0000_jazzy_ghost_rider",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1758288038693,
+      "tag": "0001_freezing_terrax",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1758288680982,
+      "tag": "0002_happy_imperial_guard",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1758288697139,
+      "tag": "0003_steady_marten_broadcloak",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1758288993217,
+      "tag": "0004_fantastic_fenris",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1760369192011,
+      "tag": "0005_whole_speed",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1760376152154,
+      "tag": "0006_dashing_midnight",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1760376574415,
+      "tag": "0007_sour_madripoor",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1760377486414,
+      "tag": "0008_hesitant_jean_grey",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1760377565048,
+      "tag": "0009_far_susan_delgado",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1760377606234,
+      "tag": "0010_misty_wonder_man",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1760377707639,
+      "tag": "0011_far_risque",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1760377754459,
+      "tag": "0012_overconfident_living_tribunal",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "7",
+      "when": 1760377894649,
+      "tag": "0013_burly_emma_frost",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "7",
+      "when": 1760378934242,
+      "tag": "0014_tan_dreadnoughts",
+      "breakpoints": true
+    },
+    {
+      "idx": 15,
+      "version": "7",
+      "when": 1760469076686,
+      "tag": "0015_harsh_smiling_tiger",
+      "breakpoints": true
+    },
+    {
+      "idx": 16,
+      "version": "7",
+      "when": 1760470881441,
+      "tag": "0016_icy_blue_marvel",
+      "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "7",
+      "when": 1760544291544,
+      "tag": "0017_thin_whirlwind",
+      "breakpoints": true
+    },
+    {
+      "idx": 18,
+      "version": "7",
+      "when": 1760545439135,
+      "tag": "0018_abandoned_sheva_callister",
+      "breakpoints": true
+    },
+    {
+      "idx": 19,
+      "version": "7",
+      "when": 1760551953955,
+      "tag": "0019_blushing_blindfold",
+      "breakpoints": true
+    }
+  ]
+}

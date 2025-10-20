@@ -1,0 +1,93 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+
+/* Preline UI */
+
+@import "preline/variants.css";
+@source "../node_modules/preline/dist/*.js";
+@import "../node_modules/preline/src/plugins/datepicker/styles.css";
+
+
+@theme {
+    --color-majorelle-50: #f4f5fe;
+    --color-majorelle-100: #ebeafd;
+    --color-majorelle-200: #d9d8fc;
+    --color-majorelle-300: #bcb9f9;
+    --color-majorelle-400: #9a92f3;
+    --color-majorelle-500: #7865ed;
+    --color-majorelle-600: #5937e0; /* primary */
+    --color-majorelle-700: #5533ce;
+    --color-majorelle-800: #472aad;
+    --color-majorelle-900: #3c248e;
+    --color-majorelle-950: #231560;
+
+    --color-california-50: #fffbea;
+    --color-california-100: #fff2c5;
+    --color-california-200: #ffe685;
+    --color-california-300: #ffd246;
+    --color-california-400: #ffbd1b;
+    --color-california-500: #ff9e0c;
+    --color-california-600: #e27200; /* primary */
+    --color-california-700: #bb4d02;
+    --color-california-800: #983b08;
+    --color-california-900: #7c310b;
+    --color-california-950: #481700;
+
+    --color-lotion: #f7f7f7;
+
+
+
+    /* container */
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-2xl: 1400px;
+}
+
+@utility container {
+    padding-inline: .75rem;
+    margin-inline: auto;
+}
+
+@layer base {
+
+    /* typography */
+
+    h1, .h1 {
+        @apply text-2xl md:text-4xl lg:text-6xl font-bold;
+    }
+    h2, .h2 {
+        @apply text-xl md:text-2xl lg:text-5xl font-bold;
+    }
+    h3, .h3 {
+        @apply text-lg md:text-xl lg:text-3xl font-semibold;
+    }
+    h4, .h4 {
+        @apply text-base md:text-lg lg:text-2xl font-semibold;
+    }
+
+    /* buttons */
+
+    .btn {
+        @apply px-4 py-3 inline-flex items-center justify-center rounded-lg font-medium cursor-pointer transition-colors;
+    }
+    .btn:disabled {
+        @apply pointer-events-none opacity-50;
+    }
+    .btn-primary {
+        @apply bg-majorelle-600 text-white hover:bg-majorelle-800 hover:no-underline;
+    }
+    .btn-secondary {
+        @apply bg-california-500 text-white hover:bg-california-600 hover:no-underline;    
+    }
+    .btn-gray {
+        @apply bg-gray-300 hover:bg-gray-400 text-black hover:no-underline;    
+    }
+
+    /* links */
+
+    a {
+        @apply text-majorelle-600 hover:underline;    
+    }
+}

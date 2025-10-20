@@ -1,0 +1,1 @@
+ALTER TABLE "vehicles" ADD COLUMN "air_conditioning" boolean DEFAULT true NOT NULL;

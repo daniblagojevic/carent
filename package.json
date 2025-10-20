@@ -1,0 +1,53 @@
+{
+    "name": "carent",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev --turbopack",
+        "build": "next build --turbopack",
+        "start": "next start",
+        "lint": "eslint",
+        "db:generate": "drizzle-kit generate",
+        "db:migrate": "tsx ./db/migrate.ts",
+        "db:check": "drizzle-kit check",
+        "db:push": "drizzle-kit push"
+    },
+    "dependencies": {
+        "@neondatabase/serverless": "^1.0.1",
+        "@preline/datepicker": "^3.2.3",
+        "@preline/input-number": "^3.2.3",
+        "@preline/select": "^3.2.3",
+        "@stripe/react-stripe-js": "^5.2.0",
+        "@stripe/stripe-js": "^8.0.0",
+        "clsx": "^2.1.1",
+        "drizzle-orm": "^0.44.5",
+        "lodash": "^4.17.21",
+        "next": "^15.5.2",
+        "next-auth": "^4.24.11",
+        "preline": "^3.2.3",
+        "react": "19.1.0",
+        "react-dom": "19.1.0",
+        "stripe": "^19.1.0",
+        "tailwind-merge": "^3.3.1",
+        "vanilla-calendar-pro": "^3.0.5",
+        "zustand": "^5.0.8"
+    },
+    "devDependencies": {
+        "@eslint/eslintrc": "^3",
+        "@tailwindcss/forms": "^0.5.10",
+        "@tailwindcss/postcss": "^4",
+        "@types/jquery": "^3.5.33",
+        "@types/lodash": "^4.17.20",
+        "@types/node": "^20",
+        "@types/nouislider": "^9.0.10",
+        "@types/react": "^19",
+        "@types/react-dom": "^19",
+        "dotenv": "^17.2.2",
+        "drizzle-kit": "^0.31.4",
+        "eslint": "^9",
+        "eslint-config-next": "15.5.2",
+        "tailwindcss": "^4",
+        "tsx": "^4.20.5",
+        "typescript": "^5"
+    }
+}
