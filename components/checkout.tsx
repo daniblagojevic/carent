@@ -16,6 +16,7 @@ import { StripePaymentElementOptions } from "@stripe/stripe-js";
 
 export default function Checkout() {
     const total = useCartStore((state) => state.getTotal());
+    const clearCart = useCartStore((state) => state.clearCart);
 
     // billing details
 
@@ -152,6 +153,7 @@ export default function Checkout() {
                     // The payment UI automatically closes with a success animation.
                     // Your customer is redirected to your `return_url`.
                     //setMessage("Payment succeeded!");
+                    clearCart();
                     window.location.href = `/success?order-id=${data.order.id}&payment_intent=${paymentIntent.id}`;
                 } else {
                     setMessage("Payment failed");
