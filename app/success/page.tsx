@@ -52,9 +52,9 @@ export default async function SuccessPage({ searchParams }: SuccessPageProps) {
             <section>
                 <div className="py-20 container">
                     <div className="w-full max-w-4xl mx-auto">
-                        <div className="flex gap-12 pb-12 items-center">
+                        <div className="flex gap-6 md:gap-12 pb-12 items-center">
                             <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-20" viewBox="0 0 640 640"><path fill="#5937e0" d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z" /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-12 md:h-20" viewBox="0 0 640 640"><path fill="#5937e0" d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z" /></svg>
                             </div>
                             <div>
                                 <div>
@@ -65,7 +65,7 @@ export default async function SuccessPage({ searchParams }: SuccessPageProps) {
                         <p className="text-center pb-12">Your order (#{order.id}) is in good hands! We'll notify you once it's en route. For now, here's a snapshot of your purchase</p>
                         <div className="pb-6 ">
                             <div className="grid grid-cols-12 gap-6">
-                                <div className="col-span-6">
+                                <div className="col-span-12 md:col-span-6">
                                     <div className="bg-lotion rounded-xl p-8 mb-6">
                                         <div className="border-b border-gray-300 pb-3">
                                             <h4 className="pb-4">Total</h4>
@@ -130,7 +130,7 @@ export default async function SuccessPage({ searchParams }: SuccessPageProps) {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-span-6">
+                                <div className="col-span-12 md:col-span-6">
                                     <div className="bg-lotion rounded-xl p-8 mb-6">
                                         <h4 className="pb-4">Vehicle</h4>
                                         <div className="">

@@ -1,27 +1,46 @@
 "use client";
 
 import VehicleList from "@/components/vehicleList";
-import { useCartStore } from "@/store/cartStore";
-import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+//import { useCartStore } from "@/store/cartStore";
+//import { useRouter } from "next/navigation";
+//import { useEffect, useState } from "react";
 
 export default function SearchResults() {
+    
+    /*
     const router = useRouter();
-
-    let location = useCartStore((state) => state.pickupLocation);
-    let date = useCartStore((state) => state.pickupDate);
-    let time = useCartStore((state) => state.pickupTime);
-
-    const { pickupDate, returnDate } = useCartStore();
+    
+    const pickupDate = useCartStore((state) => state.pickupDate);
+    const returnDate = useCartStore((state) => state.returnDate);
+    const [hydrated, setHydrated] = useState(false);
 
     useEffect(() => {
-        if (!pickupDate) {
-            //router.replace("/");
-            console.log("go back: " + pickupDate);
-        } else {
-            console.log("dont back: " + pickupDate);
+        const unsub = useCartStore.persist.onFinishHydration(() => {
+            setHydrated(true);
+        });
+
+        // In case it’s already hydrated
+        if (useCartStore.persist.hasHydrated()) {
+            setHydrated(true);
         }
-    }, [pickupDate]);
+
+        return unsub;
+    }, []);
+
+    // Once hydrated, perform redirect check
+    useEffect(() => {
+        if (!hydrated) return;
+
+        if (!pickupDate || !returnDate) {
+            router.replace("/"); // redirect
+        }
+    }, [hydrated, pickupDate, returnDate, router]);
+
+    // Avoid flicker before hydration finishes
+    if (!hydrated) {
+        return null; // or a loading spinner
+    }
+    */
 
     return (
         <>

@@ -75,7 +75,7 @@ export default function RentalForm() {
     };
 
     return (
-        <div className="bg-white p-12 rounded-3xl text-black">
+        <div className="bg-white py-6 sm:py-12 px-4 sm:px-12 rounded-3xl text-black">
             <div className="text-center pb-6">
                 <h3>Book your car</h3>
             </div>

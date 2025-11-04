@@ -177,8 +177,8 @@ export default function Extras() {
             {!loading ? (
                 <section>
                     <div className="container py-12">
-                        <div className="grid grid-cols-12 gap-12">
-                            <div className="col-span-8">
+                        <div className="grid grid-cols-12 gap-6 md:gap-12">
+                            <div className="col-span-12 xl:col-span-8">
                                 <div className="pb-6">
                                     <a className="inline-flex items-center text-sm gap-1 hover:underline text-majorelle-600" href="/search-results">
                                         <svg className="h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"></path></svg>
@@ -192,7 +192,7 @@ export default function Extras() {
                                 <div className="pb-12">
                                     <div className="grid grid-cols-12 gap-6">
                                         {deductibles.map((item, index) => (
-                                            <div className="col-span-4" key={item.id}>
+                                            <div className="col-span-12 sm:col-span-6 md:col-span-4" key={item.id}>
                                                 <label className="cursor-pointer block h-full">
                                                     <div className={`border-2 ${deductableChecked(item) ? "border-majorelle-600" : "border-gray-200"} rounded-xl overflow-hidden h-full flex flex-col`}>
                                                         <div className="bg-lotion p-4 h-46 flex flex-col justify-between shrink-0">
@@ -310,7 +310,7 @@ export default function Extras() {
                                     ))}
                                 </div>
                             </div>
-                            <div className="col-span-4">
+                            <div className="col-span-12 xl:col-span-4">
                                 <ReviewOrder />
                                 <div className="mb-6">
                                     <Link href="/checkout" className="btn btn-primary w-full" scroll={true}>Checkout</Link>

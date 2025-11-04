@@ -27,8 +27,6 @@ export default function RootLayout({
                     {children}
                 </main>
                 <Footer />
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro@3.0.5/index.min.js"></script>
             </body>
             <PrelineScriptWrapper />
         </html>

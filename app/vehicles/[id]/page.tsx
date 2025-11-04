@@ -137,7 +137,7 @@ export default function VehiclePage() {
                         <section>
                             <div className="container py-12">
                                 <div className="grid grid-cols-12 gap-6">
-                                    <div className="col-span-6">
+                                    <div className="col-span-12 lg:col-span-6">
                                         <h1 className="text-3xl font-bold mb-4">{vehicle.name}</h1>
                                         <div className="flex items-center space-x-2 mb-4">
                                             <div className="text-majorelle-600 text-3xl font-semibold">${vehicle.price}</div>
@@ -155,13 +155,13 @@ export default function VehiclePage() {
                                             />
                                         </div>
                                     </div>
-                                    <div className="col-span-6">
+                                    <div className="col-span-12 lg:col-span-6">
                                         <h4>Technical Specification</h4>
                                         <div className="pt-10">
                                             <div>
                                                 <div className="grid grid-cols-12 gap-5">
                                                     {items.map((item, index) => (
-                                                        <div key={index} className="col-span-4">
+                                                        <div key={index} className="col-span-6 xl:col-span-4">
                                                             <div className="bg-lotion rounded-xl p-8">
                                                                 <div className="pb-4">{item.icon}</div>
                                                                 <div className="pb-1 font-semibold">{item.title}</div>
@@ -174,20 +174,20 @@ export default function VehiclePage() {
                                         </div>
                                         <div className="pt-10">
                                             <div className="grid grid-cols-12 gap-6">
-                                                <div className="col-span-6">
+                                                <div className="col-span-12 md:col-span-6">
                                                     <VehicleTripDetails text="Pickup" type="pickup" />
                                                 </div>
-                                                <div className="col-span-6">
+                                                <div className="col-span-12 md:col-span-6">
                                                     <VehicleTripDetails text="Return" type="return" />
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="pt-10">
                                             <div className="grid grid-cols-12 gap-6">
-                                                <div className="col-span-6">
+                                                <div className="col-span-12 sm:col-span-6">
                                                     <VehicleButton vehicle={vehicle} />
                                                 </div>
-                                                <div className="col-span-6">
+                                                <div className="col-span-12 sm:col-span-6">
                                                     <Link href="/search-results" className="btn btn-gray w-full" scroll={true}>Pick different vehicle</Link>
                                                 </div>
                                             </div>

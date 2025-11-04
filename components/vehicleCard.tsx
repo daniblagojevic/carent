@@ -59,11 +59,11 @@ export default function VehicleCard({ vehicle }: { vehicle: Vehicle }) {
                         <div className="pb-6">
                             <div className="pb-4">
                                 <div className="flex flex-wrap gap-4">
-                                    <div className="w-full md:flex-1">
+                                    <div className="flex-1">
                                         <h4 className="">{vehicle.name}</h4>
                                         <div className="text-gray-500 text-sm">{vehicle.bodyType}</div>
                                     </div>
-                                    <div className="w-full md:w-auto text-end">
+                                    <div className="w-auto text-end">
                                         <div className="text-xl font-semibold text-majorelle-600">${vehicle.price}</div>
                                         <div className="text-gray-500 text-sm">per day</div>
                                     </div>

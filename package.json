@@ -15,6 +15,7 @@
     "dependencies": {
         "@auth/drizzle-adapter": "^1.11.0",
         "@neondatabase/serverless": "^1.0.1",
+        "@preline/accordion": "^3.2.3",
         "@preline/datepicker": "^3.2.3",
         "@preline/input-number": "^3.2.3",
         "@preline/select": "^3.2.3",

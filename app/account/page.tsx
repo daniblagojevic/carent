@@ -29,15 +29,12 @@ export default async function AccountPage() {
             .orderBy(desc(orders.createdAt));
     }
 
-
-
-
     return (
         <>
             <section>
                 <div className="py-20 container">
-                    <div className="grid grid-cols-12 gap-12">
-                        <div className="col-span-4">
+                    <div className="grid grid-cols-12 gap-6 md:gap-12">
+                        <div className="col-span-12 xl:col-span-4">
                             <div className="">
                                 <div className="flex flex-col">
                                     <div className="inline-flex items-center gap-x-3.5 py-3 px-4 text-sm font-medium bg-lotion rounded-xl">
@@ -69,7 +66,7 @@ export default async function AccountPage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-8">
+                        <div className="col-span-12 xl:col-span-8">
                             <div>
                                 {userOrders ? (
                                     <ul>
@@ -80,25 +77,25 @@ export default async function AccountPage() {
                                                     <li key={order.id} className="bg-lotion p-6 mb-6 rounded-xl">
                                                         <div className="border-b border-gray-300 pb-4">
                                                             <div className="grid grid-cols-12 gap-6">
-                                                                <div className="col-span-3">
+                                                                <div className="col-span-12 sm:col-span-6 md:col-span-3">
                                                                     <p className="font-semibold pb-1">Order number</p>
                                                                     <p className="text-sm text-gray-500">
                                                                         #{order.id}
                                                                     </p>
                                                                 </div>
-                                                                <div className="col-span-3">
+                                                                <div className="col-span-12 sm:col-span-6 md:col-span-3">
                                                                     <p className="font-semibold pb-1">Date placed</p>
                                                                     <p className="text-sm text-gray-500">
                                                                         {order.createdAt.toLocaleDateString()}
                                                                     </p>
                                                                 </div>
-                                                                <div className="col-span-3">
+                                                                <div className="col-span-12 sm:col-span-6 md:col-span-3">
                                                                     <p className="font-semibold pb-1">Vehicle</p>
                                                                     <p className="text-sm text-gray-500">
                                                                         {order.vehicleName}
                                                                     </p>
                                                                 </div>
-                                                                <div className="col-span-3">
+                                                                <div className="col-span-12 sm:col-span-6 md:col-span-3">
                                                                     <p className="font-semibold pb-1">Total</p>
                                                                     <p className="text-sm text-gray-500">
                                                                         ${order.total}
@@ -108,10 +105,10 @@ export default async function AccountPage() {
                                                         </div>
                                                         <div className="pt-6 border-b border-gray-300 pb-4">
                                                             <div className="grid grid-cols-12">
-                                                                <div className="col-span-4">
+                                                                <div className="col-span-12 sm:col-span-4">
                                                                     <img src={`vehicles/${order.vehicleImage}`} className="aspect-video w-full object-contain" />
                                                                 </div>
-                                                                <div className="col-span-8">
+                                                                <div className="col-span-12 sm:col-span-8">
                                                                     <ul>
                                                                         <li className="flex justify-between text-sm py-1">
                                                                             <div className="text-sm">{getRentalDays(String(order.pickupDate), String(order.returnDate))} rental days x ${order.vehiclePrice}</div>
@@ -134,7 +131,7 @@ export default async function AccountPage() {
                                                         </div>
                                                         <div className="pt-6 text-sm">
                                                             <div className="grid grid-cols-12 gap-6">
-                                                                <div className="col-span-4">
+                                                                <div className="col-span-12 md:col-span-4">
                                                                     <div className="pb-1 font-semibold">Pickup</div>
                                                                     <div className="">
                                                                         <div className="text-gray-500">Date: <span className="text-majorelle-600 font-bold">{order.pickupDate.toLocaleDateString()} at {order.pickupTime}</span></div>
@@ -143,7 +140,7 @@ export default async function AccountPage() {
                                                                         <div className="text-gray-500">Location: <span className="text-majorelle-600 font-bold">{order.pickupLocation}</span></div>
                                                                     </div>
                                                                 </div>
-                                                                <div className="col-span-4">
+                                                                <div className="col-span-12 md:col-span-4">
                                                                     <div className="pb-1 font-semibold">Return</div>
                                                                     <div className="">
                                                                         <div className="text-gray-500">Date: <span className="text-majorelle-600 font-bold">{order.returnDate.toLocaleDateString()} at {order.returnTime}</span></div>
@@ -152,7 +149,7 @@ export default async function AccountPage() {
                                                                         <div className="text-gray-500">Location: <span className="text-majorelle-600 font-bold">{order.returnLocation}</span></div>
                                                                     </div>
                                                                 </div>
-                                                                <div className="col-span-4">
+                                                                <div className="col-span-12 md:col-span-4">
                                                                     <div className="">
                                                                         <div className="font-semibold">{order.firstName} {order.lastName}</div>
                                                                         <div className="">{order.email}</div>
