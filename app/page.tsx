@@ -148,7 +148,7 @@ export default function Home() {
                                             <div className="bg-white rounded-2xl p-4 text-black">
                                                 <div className="flex gap-4 items-center">
                                                     <div>
-                                                        <div className="flex w-18 h-18 rounded-xl bg-california-500 flex items-center justify-center">
+                                                        <div className="flex w-18 h-18 rounded-xl bg-california-500 items-center justify-center">
                                                             <img src={item.icon} className="h-10 w-10" />
                                                         </div>
                                                     </div>
