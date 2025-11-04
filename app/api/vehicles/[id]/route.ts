@@ -1,8 +1,15 @@
 import { db } from "@/db";
 import { vehicles as getVehicles } from "@/db/schema";
 import { eq } from "drizzle-orm";
+import { NextRequest } from "next/server";
 
-export async function GET(req, context) {
+interface RouteContext {
+    params: {
+        id: string;
+    };
+}
+
+export async function GET(req: NextRequest, context: RouteContext) {
     // Await params first in JS files
     const params = await context.params;  
     const vehicleId = Number(params.id);
