@@ -62,7 +62,7 @@ export default async function SuccessPage({ searchParams }: SuccessPageProps) {
                                 </div>
                             </div>
                         </div>
-                        <p className="text-center pb-12">Your order (#{order.id}) is in good hands! We'll notify you once it's en route. For now, here's a snapshot of your purchase</p>
+                        <p className="text-center pb-12">Your order (#{order.id}) is in good hands! We&apos;ll notify you once it&apos;s en route. For now, here&apos;s a snapshot of your purchase</p>
                         <div className="pb-6 ">
                             <div className="grid grid-cols-12 gap-6">
                                 <div className="col-span-12 md:col-span-6">
